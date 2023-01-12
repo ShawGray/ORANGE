@@ -1,0 +1,319 @@
+body {
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf6f3;
+}
+
+.reminder-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9vw;
+  background-color: #ddd4c7;
+  font-weight: 600;
+}
+
+.reminder-header p {
+  margin: 10px 0px;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  color: #040404;
+  height: auto;
+}
+
+.nav-items {
+  grid-column-start: 1;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 15px;
+  padding-left: 2%;
+  margin: 1%;
+  display: none;
+}
+
+.nav-items p {
+  margin: 0 10px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: #040404;
+  font-size: 1.05vw;
+}
+
+.nav-logo {
+  grid-column-start: 2;
+  justify-self: center;
+}
+
+.nav-logo p {
+  font-size: 1.7vw;
+  margin: 10% 0%;
+  font-weight: 600;
+}
+
+.nav-icons {
+  grid-column-start: 3;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 6%;
+}
+
+.search-ica {
+  padding-right: 4%;
+}
+
+.search-icon {
+  height: 1.6vw;
+}
+
+.bag-icon {
+  height: 1.6vw;
+}
+
+.main-im {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.main-im div {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.main-im-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-im-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.item-image {
+  width: 100%;
+  height: auto;
+}
+
+.main-heading {
+  text-align: center;
+  width: 65%;
+  font-size: 3vw;
+  color: #f6e8df;
+  margin: 1% 0% 2%;
+}
+
+.main-im-welcome {
+  margin-bottom: 0%;
+  padding-top: 30%;
+  color: #f6e8df;
+  font-size: 1.2vw;
+}
+
+.main-button {
+  text-align: center;
+  padding: 1.2% 2.2%;
+  font-size: 1.1vw;
+  background-color: #fff8ed;
+  border: none;
+}
+
+.shop-all-div {
+  margin: 0 5.8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-all-div p {
+  font-size: 2vw;
+}
+
+.shop-all-div button {
+  background-color: #ded2c6;
+  border: none;
+  text-align: center;
+  padding: 1% 2%;
+  font-size: 1vw;
+}
+
+.shop-items-hs {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  width: 90%;
+
+  overflow: hidden;
+}
+
+.shop-item-card {
+  width: 35em;
+  margin: 15px;
+}
+
+.shop-item-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 3%;
+  font-size: 1rem;
+  background-color: transparent;
+  border: 2px solid #777471;
+  border-radius: 5px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  width: 10px;
+  height: 10px;
+}
+
+.arrow-left-p {
+  padding-left: 8px;
+}
+
+.arrow-right-p {
+  padding-right: 8px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.featured-items-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.item-info {
+  margin: 10px 0;
+  font-size: 160%;
+}
+
+.item-tag {
+  margin: 0px 0px 10px;
+  color: #4e4d4c;
+}
+
+.reminder-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9vw;
+  background-color: #ddd4c7;
+  font-weight: 500;
+}
+
+.last-card {
+  display: none;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+
+  .nav-grid {
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+}
+
+@media (max-width: 900px) {
+
+  body {
+    min-width: 380px;
+  }
+
+  .nav-items {
+    justify-content: flex-start;
+  }
+
+  .nav-items p {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-logo p {
+    font-size: 15px;
+  }
+
+  .search-icon {
+    height: 15px;
+  }
+
+  .bag-icon {
+    height: 15px;
+  }
+
+  .main-im-welcome {
+    font-size: 1.8vw;
+  }
+
+  .shop-all-div p {
+    font-size: 16px;
+  }
+
+  .shop-all-div button {
+    font-size: 12px;
+  }
+
+  .arrow {
+    width: 7px;
+    height: 7px;
+  }
+
+  .featured-items-container {
+    overflow: hidden;
+  }
+
+  .item-info {
+    font-size: 3vw;
+  }
+
+  .item-tag {
+    font-size: 1.7vw;
+  }
+
+  .add-to-cart-btn {
+    font-size: 2vw;
+  }
+
+  .reminder-header, .reminder-footer {
+    font-size: 12px;
+  }
+}
